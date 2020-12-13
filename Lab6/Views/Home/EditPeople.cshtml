@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "EditPeople";
+}
+
+<h2>Змінити дані про мешканця</h2>
+
+<form method="post" action="">
+    <input type="hidden" value="@ViewBag.PeopleId" name="id" />
+    <div class="form-group">
+        <label for="firstName"></label>
+        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Введіть ім'я" value="@ViewBag.PeoplefirstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName"></label>
+        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Введіть прізвище" value="@ViewBag.PeoplelastName">
+    </div>
+    <div class="form-group">
+        <label for="flatId"></label>
+        <input type="number" class="form-control" name="flatId" id="flatId" placeholder="Введіть номер квартири" value="@ViewBag.PeopleflatId">
+    </div>
+    <button type="submit" class="btn btn-primary">Змінити</button>
+</form>

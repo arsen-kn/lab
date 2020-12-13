@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Додати мешканця";
+}
+
+<h2>Додати мешканця</h2>
+
+<form method="post" action="">
+    <div class="form-group">
+        <label for="name">Ім'я</label>
+        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Введіть ім'я ">
+    </div>
+    <div class="form-group">
+        <label for="budget">Прізвище</label>
+        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Введіть прізвище">
+    </div>
+    <div class="form-group">
+        <label for="budget">Квартира</label>
+        <input type="number" class="form-control" name="flatId" id="flatId" placeholder="Введіть номер квартири">
+    </div>
+    <button type="submit" class="btn btn-primary">Додати</button>
+</form>
